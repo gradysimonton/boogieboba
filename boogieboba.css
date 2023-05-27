@@ -1,0 +1,100 @@
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            font-size: 100%;
+            background-image: url(images/bg_top.jpg), url(images/bg_bottom.jpg);
+            background-position: Center top, center bottom;
+            background-repeat: repeat-x, repeat-x;
+            background-size: 25%;
+
+        }
+
+        /* outer container */
+
+        #wrapper {
+            width: 960px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 1em;
+            background-color: RGBa(227, 254, 249, .75);
+            /* white with some opacity */
+            
+            border: 1px solid #000;
+            /* black */
+            box-shadow: 12px 12px RGBa(0, 0, 0, .10), -12px -12px RGBa(0, 0, 0, .10);
+            position: relative;
+
+        }
+
+        #wrapper H1 img {
+            transform: scale(0.);
+        }
+
+        footer address img {
+
+            border: 1px solid #000;
+            /* black */
+            border-radius: 12px;
+            box-shadow: 6px 6px RGBa(0, 0, 0, .10), -6px -6px RGBa(0, 0, 0, .10);
+
+
+        }
+
+        section img {
+            box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.5);
+
+        }
+
+        section,
+        aside {
+            border-bottom: 3px dashed gray;
+
+        }
+
+        aside h2::before {
+
+            content: url(images/icon_testimonials.jpg)
+        }
+
+
+        #header {
+            left: 50%;
+            margin-left: -500px;
+           /* width: 500px;
+            height: 200px;*/
+        }
+
+        header h1 {
+            text-align: center;
+            
+        }
+
+        /*header h1 img{
+            transform:scale(.70);
+        }*/
+
+
+        nav {
+            padding: 20px;
+            text-align: center;
+            background: -webkit-linear-gradient(top, rgba(142, 204, 240, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+
+        }
+        
+        nav a:hover {
+            color: maroon;
+            background-color: #ffd9d9;
+        }
+
+        address figure {
+            text-align: center;
+
+        }
+
+        footer h2::before {
+            content: url(images/icon_contact.jpg);
+
+
+
+        }
+    </style>
