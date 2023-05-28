@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 100%;
+    background-image: url(images/bg_top.jpg), url(images/bg_top.jpg), url(images/logo_transparent.jpg);
+    background-position: center top, center bottom, center;
+    background-repeat: repeat-x, repeat-x, no-repeat;
+    background-size: 30%;
+
+}
+
+/* outer container */
+
+#wrapper {
+    width: 960px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 1em;
+    background-color: RGBa(227, 254, 249, .75);
+    /* white with some opacity */
+
+    border: 1px solid #000;
+    /* black */
+    box-shadow: 12px 12px RGBa(0, 0, 0, .10), -12px -12px RGBa(0, 0, 0, .10);
+    position: relative;
+
+}
+
+#wrapper H1 img {
+    transform: scale(0.85);
+}
+
+
+
+section img {
+    box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+
+}
+
+section,
+aside {
+    border-bottom: 5px dotted gray;
+}
+
+aside h2::before {
+
+    content: url(images/icon_testimonials.jpg);
+    /*display: inline-block;*/
+    border-radius: 10px;
+
+}
+
+
+#header {
+    left: 50%;
+    margin-left: -500px;
+}
+
+header h1 {
+    text-align: center;
+
+}
+
+header p{
+  font-size:1.5em;
+}
+
+header p::before{
+    content: url(images/logo_small.jpg);
+}
+
+#location h2::before{
+    content: url(images/icon_locations.jpg);
+}
+
+#location p::after{
+    content: url(images/map.jpg);
+}
+
+
+
+#about h2::before{
+    content: url(images/icon_about.jpg);
+}
+
+.product {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: RGBa(220, 252, 247, .75);
+    text-align: center;
+
+}
+
+
+nav {
+    padding: 20px;
+    text-align: center;
+    background: -webkit-linear-gradient(top, rgba(142, 204, 240, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+nav a:hover {
+    color: maroon;
+    background-color: #ffd9d9;
+}
+
+address figure {
+    text-align: center;
+
+}
+
+footer address img {
+
+    border: 1px solid #000;
+    /* black */
+    border-radius: 12px;
+    box-shadow: 6px 6px RGBa(0, 0, 0, .10), -6px -6px RGBa(0, 0, 0, .10);
+}
+
+footer h2::before {
+    content: url(images/icon_contact.jpg);
+
+}
